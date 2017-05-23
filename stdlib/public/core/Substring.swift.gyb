@@ -10,19 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-extension String {
-  // FIXME(strings): at least temporarily remove it to see where it was applied
-  /// Creates a new string from the given substring.
-  ///
-  /// - Parameter substring: A substring to convert to a standalone `String`
-  ///   instance.
-  ///
-  /// - Complexity: O(*n*), where *n* is the length of `substring`.
-  public init(_ substring: Substring) {
-    self = String(substring._slice)
-  }
-}
-
 /// A slice of a string.
 ///
 /// When you create a slice of a string, a `Substring` instance is the result.
